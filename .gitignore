@@ -1,0 +1,10 @@
+node_modules/
+.expo/
+.convex/
+dist/
+web-build/
+*.log
+.env
+.env.local
+.expo-shared/
+.DS_Store

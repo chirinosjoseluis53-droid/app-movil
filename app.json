@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "Control de Prestamos Movil",
+    "slug": "control-prestamos-movil",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "controlprestamos",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#1e3a8a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.tuning.controlprestamos"
+    },
+    "android": {
+      "package": "com.tuning.controlprestamos"
+    },
+    "androidNavigationBar": {
+      "visible": "hidden"
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "La app accede a tus fotos para subir la cédula y comprobantes."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "La app usa tu ubicación para marcar tu dirección en el mapa y guiarte al negocio."
+        }
+      ],
+      "expo-sqlite",
+      "expo-sharing",
+      "expo-secure-store"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
